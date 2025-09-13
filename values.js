@@ -38,4 +38,17 @@ for (let y = 0; y < size; y++) {
     board += "\n";
 }
 //console.log(board);
-//I am back! ;)
+//I am back! ;) - 13.09.2025.
+
+/*After two years of taking a break from programming, I am continuing to practice Eloquent JS
+exercises from the book. I have already finished some of them in the previous lines two years ago,
+but I have to do them again because I need to refresh my knowledge.*/
+
+//Looping a Triangle (13.09.2025.)
+
+let triangle2 = "#";
+
+while (triangle2 <= "#######") {
+    //console.log(triangle2);
+    triangle2 = triangle2 + "#";
+}
