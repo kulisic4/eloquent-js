@@ -66,3 +66,33 @@ for (let number = 1; number <= 100; number = number + 1) {
       //console.log(number); //shows numbers that are not divisible neither with 3 or 5
     }
 }
+
+//chessboard - method 1 for loop (14.09.2025.)
+
+let size1 = 8;
+let board1 = "";
+
+for (y = 0; y < size; y++) {
+    for (x = 0; x < size; x++) {
+        if ((x +y) % 2 == 0) {
+            board += " ";
+        } else {
+            board += "#";
+        }
+    }
+    board += "\n";
+}
+//console.log(board);
+
+//chessboard -method 2    ->    set pattern strings as variables and then .repeat
+
+let spaceHashtag = " #";
+let hashtagSpace = "# ";
+
+for (i = 0; i < 8; i++) {
+    if (i % 2 == 0) {
+        console.log(spaceHashtag.repeat(4));
+    } else {
+        console.log(hashtagSpace.repeat(4));
+    }
+}
