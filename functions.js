@@ -38,5 +38,44 @@ function countChar(string, ch) {
     return countChar(string, "B");
   }
 
-console.log(countBs("Bean"));
-console.log(countChar("Netherlands", "e"));
+//console.log(countBs("Bean"));
+//console.log(countChar("Netherlands", "e"));
+
+/*from this line I am going through functions chapter again after two years
+will do exercises again when I come to the end of the chapter*/
+
+/*defining a function. The following code defines square to refer to a function
+ that produces the square of a given number*/
+
+ const square = function(x) {
+  return x * x;
+ }
+
+ //console.log(square(12));
+
+const makeNoise = function () {
+  //console.log("Pling!");
+}
+
+//makeNoise ();
+
+/*const power = function (base, exponent) {
+  let result = 1;
+  for (count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+}*/
+//console.log(power(2, 10));
+
+//recursive functions
+
+function power(base, exponent) {
+  if (exponent == 0) {
+    return 1;
+  } else {
+    return base * power(base, exponent - 1);
+  }
+}
+
+//console.log(power(2, 3));
