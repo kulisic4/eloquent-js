@@ -79,3 +79,19 @@ function power(base, exponent) {
 }
 
 //console.log(power(2, 3));
+
+//built-in toLowerCase() --> user-defined function
+
+let string ="Zdravo, Danilo." ;
+let result ="" ;
+
+function lowerCase() {
+  for (i = 0; i < string.length; i++) {
+    let charCode = string[i].charCodeAt(0);
+
+  if (charCode >= 65 && charCode <= 90) {
+      result += String.fromCharCode(charCode + 32);
+      } else result += string[i];
+  } return result;
+} 
+//console.log(lowerCase());

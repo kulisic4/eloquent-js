@@ -91,8 +91,8 @@ let hashtagSpace = "# ";
 
 for (i = 0; i < 8; i++) {
     if (i % 2 == 0) {
-        console.log(spaceHashtag.repeat(4));
+        //console.log(spaceHashtag.repeat(4));
     } else {
-        console.log(hashtagSpace.repeat(4));
+       // console.log(hashtagSpace.repeat(4));
     }
 }
