@@ -80,9 +80,9 @@ function power(base, exponent) {
 
 //console.log(power(2, 3));
 
-//built-in toLowerCase() --> user-defined function
+//built-in toLowerCase() --> user-defined function Method 1
 
-let string ="Zdravo, Danilo." ;
+/*let string ="Zdravo, Danilo." ;
 let result ="" ;
 
 function lowerCase() {
@@ -93,5 +93,42 @@ function lowerCase() {
       result += String.fromCharCode(charCode + 32);
       } else result += string[i];
   } return result;
-} 
+} */
 //console.log(lowerCase());
+
+//toLowerCase() Method 2
+
+let string = "Zdravo, Danilo.";
+
+function myLowerCase (str) {
+  return str // 'return str' na vrhu radi kako treba
+  .split("")
+  .map(char => {
+    if (char === char.toUpperCase() && char !== char.toLowerCase()) {
+      return char.toLowerCase();
+       } else {
+      return char;
+    }
+  }) 
+  .join("");
+  //'return str' ovde na kraju vraca string bez smanjenih slova, zasto?
+}
+
+
+console.log(myLowerCase(string));
+
+//toLowerCase() with ternary operator
+
+/*let string = "Zdravo, Danilo.";
+
+function myLowerCase (str) {
+  return str
+  .split("")
+  .map(char => char === char.toUpperCase() && char !== char.toLowerCase() 
+     ? char.toLowerCase() 
+     : char)
+  .join("");
+} 
+
+
+console.log(myLowerCase(string));*/
