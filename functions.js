@@ -98,7 +98,7 @@ function lowerCase() {
 
 //toLowerCase() Method 2
 
-let string = "Zdravo, Danilo.";
+/*let string = "Zdravo, Danilo.";
 
 function myLowerCase (str) {
   return str // 'return str' na vrhu radi kako treba
@@ -119,7 +119,7 @@ console.log(myLowerCase(string));
 
 //toLowerCase() with ternary operator
 
-/*let string = "Zdravo, Danilo.";
+let string = "Zdravo, Danilo.";
 
 function myLowerCase (str) {
   return str
@@ -132,3 +132,63 @@ function myLowerCase (str) {
 
 
 console.log(myLowerCase(string));*/
+
+
+//custom toLowerCase ---> using object and for loop
+
+let string = "Zdravo, Danilo.";
+
+function myLowerCase (str) {
+ obj =
+ {
+   "Z": "z",
+   "D": "d",
+ }
+let result ="";
+  
+  for (let i = 0; i < str.length; i++ ) {
+  let char = str[i];
+    
+    if (obj[char]) {
+      result += obj[char];
+    } else {
+      result += char;
+    }
+  
+  }
+  return result
+}
+
+//console.log(myLowerCase(string))
+
+//custom toLowerCase() using .map()
+
+let string1 = "Zdravo, Danilo.";
+
+function myLowerCase (str) {
+ obj =
+ {
+   "Z": "z",
+   "D": "d",
+ }
+let arr =[];
+let result ="";
+  
+  for (let i = 0; i < str.length; i++ ) {
+    arr[i] = string[i];}
+  
+  let newArray = arr.map(char => {
+      if (obj[char]) {
+        return obj[char];
+      } else {
+        return char;
+      }
+    })
+
+  for (i = 0; i < newArray.length; i++) {
+    result += newArray[i];
+  }
+  return result;
+}
+
+//console.log(myLowerCase(string))
