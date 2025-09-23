@@ -136,7 +136,7 @@ console.log(myLowerCase(string));*/
 
 //custom toLowerCase ---> using object and for loop
 
-let string = "Zdravo, Danilo.";
+/*let string = "Zdravo, Danilo.";
 
 function myLowerCase (str) {
  obj =
@@ -157,13 +157,13 @@ let result ="";
   
   }
   return result
-}
+}*/
 
 //console.log(myLowerCase(string))
 
-//custom toLowerCase() using .map()
+//custom ---> toLowerCase() using .map()
 
-let string1 = "Zdravo, Danilo.";
+/*let string = "Zdravo, Danilo.";
 
 function myLowerCase (str) {
  obj =
@@ -189,6 +189,6 @@ let result ="";
     result += newArray[i];
   }
   return result;
-}
+}*/
 
 //console.log(myLowerCase(string))
