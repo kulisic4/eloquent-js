@@ -192,3 +192,9 @@ let result ="";
 }*/
 
 //console.log(myLowerCase(string))
+
+//using Math.min()
+function minValue(a, b) {
+return Math.min(a, b)
+} console.log(minValue(5, 10))
+
