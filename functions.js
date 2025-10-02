@@ -196,5 +196,28 @@ let result ="";
 //using Math.min()
 function minValue(a, b) {
 return Math.min(a, b)
-} console.log(minValue(5, 10))
+} //console.log(minValue(5, 10))
 
+//odd & even numbers
+
+/*function checkNumber(num) {
+  if (typeof num !== "number"){
+    return "input valid number";
+} else if (num % 2 === 0) {
+  return "Even number!";
+} else {
+  return "Odd number!";
+}
+}*/
+
+//console.log(checkNumber(6));
+
+function checkNumber(num) {
+  return typeof num !== "number"
+  ? "Input valid number!"
+  : num % 2 === 0
+  ? "Even number!"
+  : "Odd number!"
+}
+
+console.log(checkNumber(88));
