@@ -1,8 +1,8 @@
 //Minimum
 
 function min(a, b) {
-    if (a < b) return a;
-    else return b;
+  if (a < b) return a;
+  else return b;
 }
 
 //console.log(min(6, 19));
@@ -11,10 +11,10 @@ function min(a, b) {
 //Recursion
 
 function isEven(n) {
-    if (n == 0) return true;
-    else if (n == 1) return false;
-    else if (n < 0) return isEven(-n);
-    else return isEven(n - 2);
+  if (n == 0) return true;
+  else if (n == 1) return false;
+  else if (n < 0) return isEven(-n);
+  else return isEven(n - 2);
 }
 
 //console.log(isEven(50));
@@ -25,18 +25,18 @@ function isEven(n) {
 //Bean Counting
 
 function countChar(string, ch) {
-    let counted = 0;
-    for (let i = 0; i < string.length; i++) {
-      if (string[i] == ch) {
-        counted += 1;
-      }
+  let counted = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == ch) {
+      counted += 1;
     }
-    return counted;
   }
-  
-  function countBs(string) {
-    return countChar(string, "B");
-  }
+  return counted;
+}
+
+function countBs(string) {
+  return countChar(string, "B");
+}
 
 //console.log(countBs("Bean"));
 //console.log(countChar("Netherlands", "e"));
@@ -47,15 +47,15 @@ will do exercises again when I come to the end of the chapter*/
 /*defining a function. The following code defines square to refer to a function
  that produces the square of a given number*/
 
- const square = function(x) {
+const square = function (x) {
   return x * x;
- }
+};
 
- //console.log(square(12));
+//console.log(square(12));
 
 const makeNoise = function () {
   //console.log("Pling!");
-}
+};
 
 //makeNoise ();
 
@@ -133,7 +133,6 @@ function myLowerCase (str) {
 
 console.log(myLowerCase(string));*/
 
-
 //custom toLowerCase ---> using object and for loop
 
 /*let string = "Zdravo, Danilo.";
@@ -195,7 +194,7 @@ let result ="";
 
 //using Math.min()
 function minValue(a, b) {
-return Math.min(a, b)
+  return Math.min(a, b);
 } //console.log(minValue(5, 10))
 
 //function ---> odd & even numbers
@@ -214,10 +213,10 @@ return Math.min(a, b)
 
 function checkNumber(num) {
   return typeof num !== "number"
-  ? "Input valid number!"
-  : num % 2 === 0
-  ? "Even number!"
-  : "Odd number!"
+    ? "Input valid number!"
+    : num % 2 === 0
+    ? "Even number!"
+    : "Odd number!";
 }
 
 //console.log(checkNumber(88));
@@ -227,9 +226,24 @@ function checkNumber(num) {
 function backwards(string) {
   result = "";
   for (let i = string.length - 1; i >= 0; i--) {
-  result += string[i];
+    result += string[i];
   }
   return result;
 }
 
 //console.log(backwards("mentor"));
+
+//function ---> returns prime numbers
+
+function isPrime(num) {
+  if (num <= 1) return false;
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+//console.log(isPrime(3));
