@@ -247,3 +247,44 @@ function isPrime(num) {
 }
 
 //console.log(isPrime(3));
+
+// function ---> check if a string is a palindrome
+
+function isPalindrome(string) {
+  string = string.toLowerCase().replace(/ /g, "");
+  for (i = 0; i < string.length / 2; i++) {
+    if (string[i] !== string[string.length - 1 - i]) {
+     return "Not a palindrome!";
+    } 
+  }
+  return "It's a palindrome!";
+}
+
+//console.log(isPalindrome("Nurses run"));
+
+// Regular expression in javascript ---> replace() and replace() chaining
+
+let str = "bam bam bam bam";
+let newStr = str.replace(/b/g, "T")
+
+//console.log(newStr);
+
+/*function isChanged(str) {
+  return str.replace(/ /g, "_").replace(/a/g, "@");
+}
+
+//console.log(isChanged("Paja patak"));
+
+function isChanged(str) {
+  return str.replace(/e/g, "3").replace(/i/g, "1").replace(/ /g, "-");
+}*/
+
+//console.log(isChanged("jedan tri"));
+
+// /\w+/g regex expression that returns seperate words
+
+/*function numOfSentences (str) {
+  return str.match(/\w+/g)
+}
+
+console.log(numOfSentences("one two three"));*/
