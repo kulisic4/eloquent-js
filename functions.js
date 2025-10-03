@@ -198,7 +198,7 @@ function minValue(a, b) {
 return Math.min(a, b)
 } //console.log(minValue(5, 10))
 
-//odd & even numbers
+//function ---> odd & even numbers
 
 /*function checkNumber(num) {
   if (typeof num !== "number"){
@@ -220,4 +220,16 @@ function checkNumber(num) {
   : "Odd number!"
 }
 
-console.log(checkNumber(88));
+//console.log(checkNumber(88));
+
+//function ---> returns a string backwards
+
+function backwards(string) {
+  result = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+  result += string[i];
+  }
+  return result;
+}
+
+//console.log(backwards("mentor"));
