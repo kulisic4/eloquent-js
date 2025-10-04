@@ -160,35 +160,8 @@ let result ="";
 
 //console.log(myLowerCase(string))
 
-//custom ---> toLowerCase() using .map()
 
-/*let string = "Zdravo, Danilo.";
 
-function myLowerCase (str) {
- obj =
- {
-   "Z": "z",
-   "D": "d",
- }
-let arr =[];
-let result ="";
-  
-  for (let i = 0; i < str.length; i++ ) {
-    arr[i] = string[i];}
-  
-  let newArray = arr.map(char => {
-      if (obj[char]) {
-        return obj[char];
-      } else {
-        return char;
-      }
-    })
-
-  for (i = 0; i < newArray.length; i++) {
-    result += newArray[i];
-  }
-  return result;
-}*/
 
 //console.log(myLowerCase(string))
 
@@ -265,7 +238,7 @@ function isPalindrome(string) {
 // Regular expression in javascript ---> replace() and replace() chaining
 
 let str = "bam bam bam bam";
-let newStr = str.replace(/b/g, "T")
+let newStr = str.replaceAll("b", "T")
 
 //console.log(newStr);
 
