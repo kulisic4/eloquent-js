@@ -1,5 +1,5 @@
 function toMyUpperCase(str) {
-    obj = {
+    const obj = {
         d: "D",
         h: "H",
     };

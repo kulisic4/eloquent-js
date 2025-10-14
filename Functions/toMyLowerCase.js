@@ -1,7 +1,7 @@
 let string = "Zdravo, Danilo.";
 
 function myLowerCase(str) {
-  obj = {
+  let obj = {
     Z: "z",
     D: "d",
   };
@@ -27,7 +27,7 @@ function myLowerCase(str) {
 }
 
 function myLowerCase(str) {
-  obj = {
+  let obj = {
     Z: "z",
     D: "d",
   };
@@ -43,7 +43,7 @@ function myLowerCase(str) {
 myLowerCase("HELLO");
 
 function myLowerCase(str) {
-  obj = {
+  let obj = {
     Z: "z",
     D: "d",
   };
