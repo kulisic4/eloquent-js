@@ -1,4 +1,4 @@
-//storing numbers in the array listOfNumbers
+//storing numbers in the array listOfNumbers``
 let listOfNumbers = [2, 3, 5, 7, 11];
 
 console.log(listOfNumbers[2]);
